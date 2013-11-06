@@ -8690,7 +8690,7 @@ void wlan_hdd_cfg80211_lphb_ind_handler
 )
 {
    tSirLPHBInd     *lphbInd;
-   struct sk_buff  *skb;
+   struct sk_buff  *skb = NULL;
 
    VOS_TRACE(VOS_MODULE_ID_HDD, VOS_TRACE_LEVEL_ERROR,
              "LPHB indication arrived");
